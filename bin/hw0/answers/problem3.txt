@@ -1,0 +1,20 @@
+1. Why did Fibonacci fail the testThrowsIllegalArgumentExceptiontest? 
+    What did you have to do to fix it?
+   
+Because the first if statement included 0, there was an illegal
+argument exception every time the program ran. By changing this
+to x < 0 instead of x <= 0 this error disappeared.
+
+2. Why did Fibonacci fail the testBaseCasetest? What (if anything) 
+	did you have to do to fix it?
+	
+Initially failed because 0 was not initialized to value 1. I changed 
+the values of the elif statement to 0 and 1 instead of 1 and 2 to
+solve this problem.
+	
+3. Why did Fibonacci fail the testInductiveCase test?What (if anything) 
+	did you have to do to fix it?
+	
+Failed because of the incorrect equation at the bottom, initially subtracting
+f(n+1) and f(n-2). The fix to this is changing this to the correct equation, 
+f(n-1) + f(n-2).

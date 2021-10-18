@@ -1,0 +1,4 @@
+b - displays building names and respective id's alphabetically
+r - prompts for input of 2 buildings and displays shortest path with directions
+q - quit
+m - displays this menu

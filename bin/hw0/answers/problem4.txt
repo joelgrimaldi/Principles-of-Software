@@ -1,0 +1,19 @@
+Problems with Ball.java:
+	-When initializing variables didn't use this.color and
+	this.volume
+	-When using getVolume() getColor() returned null and 0
+	instead of this.color and this.volume
+	
+I did not make any changes to the other classes in the implementation
+of the getSmallest function.
+
+2 different ways of implementing getBallsFromSmallest:
+	- Using a TreeSet the way that I did setting a sort
+	comparator and implementing in the creation of the TreeSet,
+	then putting in the balls one by one and adding iterator.
+	- Using a comparator and creating a clone of the ballContainer
+	set in an array list and turning it into an iterator.
+	
+I think that the best way is using the TreeSet because it is much
+easier to implement and is automatically sorted by just including
+the sort method in the parentheses.
